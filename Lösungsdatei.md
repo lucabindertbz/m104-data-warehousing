@@ -147,3 +147,21 @@ JOIN filialen ON filialen.id = facts.filialen_id
 JOIN artikel ON artikel.id = facts.artikel_id
 JOIN quartal ON quartal.id = facts.quartal_id
 ```
+
+## Aufgabe 4
+
+```
+DROP VIEW IF EXISTS vw_data_warehousing;
+CREATE VIEW vw_data_warehousing AS
+SELECT
+facts.anzahl AS Anzahl,
+facts.umsatz AS Umsatz,
+facts.gewinn AS Gewinn,
+filialen.filiale_name AS Filiale,
+artikel.artikel_name AS Artikel,
+quartal.quartal_name AS Quartal
+```
+
+Diese View legt eine virtuelle Tabelle namens "vw_data_warehousing" an, die Daten aus drei anderen Tabellen ("facts", "filialen" und "artikel") zusammenfasst. Diese virtuelle Tabelle zeigt für jedes Quartal, welche Anzahl von einem bestimmten Artikel in welcher Filiale verkauft wurde, sowie den daraus resultierenden Umsatz und Gewinn.
+
+Diese View wird dann nach für die Pivot Tabelle in EXCEL genutzt, um die Daten besser darstellen und analysieren zu können. Vor der Erstellung der View wird überprüft, ob es bereits eine View mit demselben Namen gibt, und falls ja, wird diese gelöscht.
