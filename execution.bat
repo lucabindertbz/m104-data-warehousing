@@ -1,0 +1,1 @@
+mysql -uroot1 -proot1 -h127.0.0.1 -P41063 -i < full.sql
