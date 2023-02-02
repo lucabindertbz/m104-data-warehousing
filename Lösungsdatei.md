@@ -1,4 +1,4 @@
-# Lösungsdatei
+# Lösungsdatei Data Warehousing von Strömstedt Carl und Luca Binder
 
 ## Aufgabe Data Warehousing
 
