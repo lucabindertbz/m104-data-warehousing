@@ -1,0 +1,3 @@
+# Lösungsdatei
+
+## Aufgabe 1:
