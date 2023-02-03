@@ -171,6 +171,6 @@ Diese View wird danach für die Pivot Tabelle in EXCEL genutzt, um die Daten bes
 EXCEL Pivot Funktion ausführen und mit unseren Datenbank verbinden um nacher diese Tabelle zu erstellen:
 ![Pivot Table](pictures/pivot-table.png)
 
-- Graph stimmt noch nicht ganz
-
 ## Aufgabe 6
+
+![Pivot Table A6](pictures/pivot-table-a6.png)
