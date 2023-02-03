@@ -117,8 +117,7 @@ IGNORE 1 ROWS;
 
 ```
 
-Im folgenden Teil des Codes schieben wir die Spalten von der Importtabelle in einzelne Tabellen. Für die Facts-Tabelle bringen wir mit einem SELECT und WHERE die Spalten die einen Foreign-Key beinhalten, mit den Werten in der dazugehörigen Tabelle.
-
+Im folgenden Teil des Codes schieben wir die Spalten von der Importtabelle in einzelne Tabellen. Für die Facts-Tabelle bringen wir mit einem SELECT und WHERE die Spalten die einen Foreign-Key beinhalten, mit den Werten aus der dazugehörigen Tabelle zusammen.
 
 ```
 
