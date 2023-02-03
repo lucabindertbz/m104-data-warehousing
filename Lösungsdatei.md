@@ -115,6 +115,13 @@ FIELDS TERMINATED BY ';'
 LINES TERMINATED BY '\n'
 IGNORE 1 ROWS;
 
+```
+
+Im folgenden Teil des Codes schieben wir die Spalten von der Importtabelle in einzelne Tabellen. Für die Facts-Tabelle bringen wir mit einem SELECT und WHERE die Spalten die einen Foreign-Key beinhalten, mit den Werten in der dazugehörigen Tabelle.
+
+
+```
+
 INSERT IGNORE INTO filialen (filiale_name)
 select Distinct Filialen from import_rohdaten;
 
