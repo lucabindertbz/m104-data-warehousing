@@ -16,11 +16,11 @@ Durch die starke Beziehung zwischen den ersten vier Tabellen ist es möglich, ei
 
 ## Aufgabe 2
 
-Wir mussten das CSV-Datei vor dem Import in die SQL-Tabelle "import_rohdaten" anpassen. Dies beinhaltete das Entfernen von Abständen, das Löschen des Dollar-Zeichens und das Entfernen der Hochkommas. Diese Anpassungen waren notwendig, um eine erfolgreiche Übertragung der Daten in die SQL-Tabelle zu garantieren. Nach diesen Änderungen konnten wir das bearbeitete CSV-Datei problemlos mit SQL-Befehlen importieren.
+Wir mussten die CSV-Datei vor dem Import in die SQL-Tabelle "import_rohdaten" anpassen. Dies beinhaltete das Entfernen von Abständen, das Löschen des Euro-Zeichens und das Entfernen der Hochkommas. Diese Anpassungen waren notwendig, um eine erfolgreiche Übertragung der Daten in die SQL-Tabelle zu garantieren. Nach diesen Änderungen konnten wir die bearbeitete CSV-Datei problemlos mit SQL-Befehlen importieren.
 
 ### SQL
 
-Dieser folgende MySQL-Befehl erstellt eine Datenbank mit dem Namen "data_warehousing" und legt darin fünf Tabellen an: "facts", "filialen", "quartal", "artikel" und "import_rohdaten" nach unseren Vorgaben des ERD's.
+Der folgende MySQL-Befehl erstellt eine Datenbank mit dem Namen "data_warehousing" und legt darin fünf Tabellen an: "facts", "filialen", "quartal", "artikel" und "import_rohdaten" nach unseren Vorgaben des ERD's.
 
 In jeder Tabelle werden Spalten definiert, z.B. enthält die Tabelle "facts" die Spalten "id", "anzahl", "umsatz", "gewinn", "filialen_id", "quartal_id" und "artikel_id". Außerdem werden Primärschlüssel, Fremdschlüssel-Beziehungen und Indizes festgelegt.
 
@@ -162,15 +162,15 @@ artikel.artikel_name AS Artikel,
 quartal.quartal_name AS Quartal
 ```
 
-Diese View legt eine virtuelle Tabelle namens "vw_data_warehousing" an, die Daten aus drei anderen Tabellen ("facts", "filialen" und "artikel") zusammenfasst. Diese virtuelle Tabelle zeigt für jedes Quartal, welche Anzahl von einem bestimmten Artikel in welcher Filiale verkauft wurde, sowie den daraus resultierenden Umsatz und Gewinn.
+Die View legt eine virtuelle Tabelle namens "vw_data_warehousing" an, die Daten aus drei anderen Tabellen ("facts", "filialen" und "artikel") zusammenfasst. Diese virtuelle Tabelle zeigt für jedes Quartal, welche Anzahl von einem bestimmten Artikel in welcher Filiale verkauft wurde, sowie den daraus resultierenden Umsatz und Gewinn.
 
-Diese View wird dann nach für die Pivot Tabelle in EXCEL genutzt, um die Daten besser darstellen und analysieren zu können. Vor der Erstellung der View wird überprüft, ob es bereits eine View mit demselben Namen gibt, und falls ja, wird diese gelöscht.
+Diese View wird danach für die Pivot Tabelle in EXCEL genutzt, um die Daten besser darstellen und analysieren zu können. Vor der Erstellung der View wird überprüft, ob es bereits eine View mit demselben Namen gibt, und falls ja, wird diese gelöscht.
 
 ## Augabe 5
 
 EXCEL Pivot Funktion ausführen und mit unseren Datenbank verbinden um nacher diese Tabelle zu erstellen:
 ![Pivot Table](pictures/pivot-table.png)
 
-- Graf stimmt noch nicht ganz
+- Graph stimmt noch nicht ganz
 
 ## Aufgabe 6
